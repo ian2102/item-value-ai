@@ -6,7 +6,7 @@ This project uses trade message parsing, machine learning, and OCR to estimate f
 
 ---
 
-## How It Works
+## How It Works (Simplified)
 
 ### 1. Trade Data Collection + LLM Parsing
 - Capture Trade Post network data  
@@ -55,4 +55,3 @@ To provide accurate pricing insights for high-value items that are not visible o
 This project is not affiliated with or endorsed by Ironmace or Dark and Darker.  
 Use responsibly and in accordance with the game's terms of service.
 
----
