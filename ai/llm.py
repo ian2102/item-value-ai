@@ -1,81 +1,26 @@
 import requests
 import time
+import json
 
-def get_dbs(message):
-    prompt1 = f"""
-Extract the number of dbs.
-End your output with ###END###
-If no items have prices in dbs or you cannot parse correctly, output Fail###END###.
-Otherwise output exactly one line per item in this format:
-[Item] Output: <number of dbs for that item>
 
-[a][b]4dbs/5dbs
-[a] 4
-[b] 5###END###
-
-[a]1db
-[1] Output: 1###END###
-
-[a][b]1db each
-[a] 1
-[b] 1###END###
-
-[a]
-Fail###END###
-
-[a]pls give me free stuff
-Fail###END###
-
-Message: {message}
-"""
+# Convert messages to number of dbs using llms
+def message_to_c_llm(message):
     prompt = f"""
-You are a strict parser for item db counts. Follow these rules exactly:
+What are the number of dbs for each item?
 
-1. Only consider numeric values immediately followed by "db" or "dbs".  
-2. Ignore all other numbers, words, URLs, or offers.  
-3. For each item ([a], [b], [c], etc.), output exactly one line in this format:
-[Item] Output: <number of dbs>
-4. If an item is listed but no valid db number exists, output nothing for it.
-5. If no items have valid db numbers, output exactly:
-Fail###END###
-6. End your output with ###END###.
+Respond in valid JSON only.
+End your JSON with ###END###.
+Format example:
+{{"[X]": (number of dbs for X)}}###END###
+Make an entry for each item in the message, where an item is in [].
 
-Examples:
+If the item/items is not priced with dbs, respond with:
+{{"result": "Fail"}}###END###
 
-[a][b]4dbs/5dbs
-[a] Output: 4
-[b] Output: 5
-###END###
+Message:
+{message}
 
-[a]1db
-[a] Output: 1
-###END###
-
-[a][b]1db each
-[a] Output: 1
-[b] Output: 1
-###END###
-
-[a]
-Fail###END###
-
-[a]pls give me free stuff
-Fail###END###
-
-[a]61+2 wts 2db+2full or offer
-[a] Output: 2
-###END###
-
-[a][b][c]4db / 2db / 1db
-[a] Output: 4
-[b] Output: 2
-[c] Output: 1
-###END###
-
-[a]ZIKRON ICE GET FRESH
-Fail###END###
-
-Message: {message}
+Answer:
 """
 
     start_time = time.time()
@@ -94,9 +39,41 @@ Message: {message}
 
     result = response.json()
 
-    print(f"Time taken: {end_time - start_time:.3f} seconds")
-    return result["content"]
+    #print(f"Time taken: {end_time - start_time:.3f} seconds")
+
+    json_string = result["content"].split("\n")[-1] # get last line
+
+    try:
+        data = json.loads(json_string)
+        if data.get("result") == "Fail":
+            return {}
+        else:
+            return data
+    except json.JSONDecodeError:
+        return {}
 
 
 if __name__ == "__main__":
-    get_dbs("[RecurveBow_8001]6dbs")
+    m = "[Q]6dbs"
+    print(m)
+    print(message_to_c_llm(m))
+
+    m = "[C]4dbs"
+    print(m)
+    print(message_to_c_llm(m))
+
+    m = "[V][B]3 db each"
+    print(m)
+    print(message_to_c_llm(m))
+
+    m = "[J]pls give me free loot"
+    print(m)
+    print(message_to_c_llm(m))
+
+    m = "[T][M]4db / 2db / 1db"
+    print(m)
+    print(message_to_c_llm(m))
+
+    m = "[T]"
+    print(m)
+    print(message_to_c_llm(m))

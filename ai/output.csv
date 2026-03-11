@@ -1,0 +1,15 @@
+message,name,rarity,id,pp_Effect_PhysicalWeaponDamage,pp_Effect_ArmorPenetration,pp_Effect_MoveSpeed,sp_Effect_MaxHealthBonus,sp_Effect_MagicPenetration,sp_Effect_RegularInteractionSpeed,value,sp_Effect_MagicalDamageBonus,sp_Effect_BuffDurationBonus,sp_Effect_MemoryCapacityBonus,sp_Effect_PhysicalDamageBonus,sp_Effect_PhysicalDamageReduction,sp_Effect_DemonDamageMod,sp_Effect_MagicalInteractionSpeed,sp_Effect_CooldownReductionBonus,sp_Effect_HeadshotDamageMod,sp_Effect_MagicalDamageReduction,sp_Effect_ProjectileReductionMod,pp_Effect_MagicalWeaponDamage,sp_Effect_DemonReductionMod,sp_Effect_DebuffDurationBonus,pp_Effect_MagicalDamage,pp_Effect_MagicPenetration,sp_Effect_ActionSpeed,pp_Effect_ArmorRating,sp_Effect_ArmorPenetration,sp_Effect_UndeadDamageMod
+[I],Longbow,8,Longbow_8001,1.0,1.0,1.0,0.9,0.6,0.9,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+[I]61+2 wts 2db+2full or offer,Halberd,8,Halberd_8001,1.0,0.0,1.0,0.0,0.0,0.0,1,0.5833333333333334,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+[I] ,MorningStar,8,MorningStar_8001,1.0,1.0,1.0,0.0,0.0,0.0,1,0.4166666666666667,0.8,0.8333333333333334,0.5,0.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+[I][D][C][P][F] good viola,DoubleAxe,8,DoubleAxe_8001,0.9827586206896551,0.0,1.0,0.0,0.0,0.75,1,0.0,0.0,0.9166666666666666,0.0,0.5,0.875,0.875,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+[I][D][C][P][F] good viola,StilettoDagger,8,StilettoDagger_8001,1.0,1.0,1.0,0.0,0.0,0.0,1,0.75,0.9333333333333333,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+[I][D][C][P][F] good viola,StilettoDagger,8,StilettoDagger_8001,1.0,1.0,1.0,0.0,0.0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.8,0.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+[I][D][C][P][F] good viola,StilettoDagger,8,StilettoDagger_8001,1.0,1.0,1.0,0.0,0.0,0.95,1,0.0,0.0,0.7333333333333333,0.0,0.0,0.0,0.0,0.8,0.0,0.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+[I][D][C][P][F] good viola,StilettoDagger,8,StilettoDagger_8001,1.0,1.0,1.0,0.0,0.6,0.0,1,0.0,0.5333333333333333,0.0,0.0,0.0,0.9,0.0,0.0,0.9,0.0,0.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+[I][D]4db / 2db / 1db,CrystalSword,8,CrystalSword_8001,1.0,0.0,1.0,0.0,0.0,0.8,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.85,0.9666666666666666,0.0,0.0,0.0,0.0,0.0,0.0
+[I][D]4db / 2db / 1db,Halberd,8,Halberd_8001,1.0,0.0,1.0,0.0,0.0,0.0,2,0.0,0.8,0.0,0.0,0.0,0.575,0.0,0.5,0.0,0.0,0.775,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+[I],CrystalBall,8,CrystalBall_8001,0.0,0.0,1.0,0.0,0.0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9333333333333333,0.0,0.0,0.5333333333333333,0.0,0.0,0.0,1.0,1.0,0.6666666666666667,0.0,0.0,0.0
+[I][D],MorningStar,8,MorningStar_8001,1.0,1.0,1.0,1.0,0.0,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.55,0.0,0.9333333333333333,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+[I][D],Buckler,8,Buckler_8001,0.0,0.0,1.0,0.0,0.0,0.0,1,0.0,0.4666666666666667,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9642857142857143,0.65,0.0
+[I]offerr,Halberd,8,Halberd_8001,1.0,0.0,1.0,0.0,0.0,0.0,1,0.0,0.0,0.0,0.625,0.0,0.0,1.0,0.0,0.0,0.0,0.675,0.0,0.5,0.0,0.0,0.0,0.0,0.0,0.0,0.925
