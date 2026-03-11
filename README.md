@@ -39,6 +39,9 @@ The system:
 
 ---
 
+## Demo
+https://github.com/user-attachments/assets/e8b82422-af1f-4ee0-8414-309f878db550
+
 ## Goal
 
 To provide accurate pricing insights for high-value items that are not visible on the official marketplace, helping players:
@@ -54,4 +57,5 @@ To provide accurate pricing insights for high-value items that are not visible o
 
 This project is not affiliated with or endorsed by Ironmace or Dark and Darker.  
 Use responsibly and in accordance with the game's terms of service.
+
 
